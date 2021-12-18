@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  gonodedb:
+    image: postgres
+    container_name: gonodedb
+    environment:
+      - POSTGRES_USER=gonode
+      - POSTGRES_PASSWORD=gonode
+    ports:
+      - 5432:5432
+    volumes:
+      - gonodedb:/data/postgres
+
+volumes:
+  gonodedb:
+    external: true
