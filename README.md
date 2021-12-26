@@ -1,4 +1,4 @@
-# Rentx Api
+# Gonode Api
 
 ## About this Project
 
